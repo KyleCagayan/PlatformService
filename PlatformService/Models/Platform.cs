@@ -1,10 +1,13 @@
+
 using System.ComponentModel.DataAnnotations;
 
 namespace PlatformService.Models
 {
     public class Platform
     {
-        public required int Id { get; set; }
+        [Key]
+        [Required]
+        public int Id { get; set; }
 
         public required string Name { get; set; }
 
